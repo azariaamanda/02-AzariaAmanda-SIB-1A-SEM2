@@ -9,6 +9,6 @@ public class MahasiswaMain02 {
         mhs1.tampilkanInformasi();
         mhs1.ubahKelas ("SI 2K") ;
         mhs1.updateIpk(3.60) ;
-        mhs1.tampilkanInformasi(); 
+        mhs1.tampilkanInformasi();
     }
 }
