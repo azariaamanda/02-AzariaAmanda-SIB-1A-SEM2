@@ -26,5 +26,11 @@ public class DosenDemo02 {
         for (Dosen02 dsn : arrayOfDosen) {
             dsn.cetakInfo();
         }
+
+        DataDosen02.dataSemuaDosen(arrayOfDosen);
+        DataDosen02.infoDosenPalingTua(arrayOfDosen);
+        DataDosen02.infoDosenPalingTua(arrayOfDosen);
+        DataDosen02.jumlahDosenPerJenisKelamin(arrayOfDosen);
+        DataDosen02.rerataUsiaDosenPerJenisKelamin(arrayOfDosen);
     }
 }
