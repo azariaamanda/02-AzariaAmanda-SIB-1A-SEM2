@@ -15,7 +15,7 @@ public class MahasiswaDemo02 {
             arrayOfMahasiswa[i].nama = sc2.nextLine();
             System.out.print("Kelas : ");
             arrayOfMahasiswa[i].kelas = sc2.nextLine();
-            System.out.print("IPK : ");
+            System.out.print("IPK   : ");
             dummy = sc2.nextLine();
             arrayOfMahasiswa[i].ipk = Float.parseFloat(dummy);
             System.out.println("-----------------------------------");
