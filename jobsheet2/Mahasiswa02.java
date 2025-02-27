@@ -4,7 +4,17 @@ public class Mahasiswa02 {
     String nama;
     String kelas;
     double ipk;
+    
+    public Mahasiswa02() {
+    }
 
+    public Mahasiswa02(String nm, String nim, double ipk, String kls) {
+        nama = nm;
+        this.nim = nim;
+        this.ipk = ipk;
+        kelas = kls;
+    }
+    
     void tampilkanInformasi() {
         System.out.println("Nama: " + nama);
         System.out.println("NIM: " + nim);
@@ -17,6 +27,11 @@ public class Mahasiswa02 {
 
     void updateIpk (double ipkBaru) {
         ipk = ipkBaru;
+        if (ipkBaru >= 0.0 && ipkBaru <= 4.0){
+            ipk = ipkBaru;
+        } else {
+            System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0"); 
+        }
     }
 
     String nilaiKinerja() {
@@ -30,4 +45,5 @@ public class Mahasiswa02 {
             return "Kinerja kurang";
         }
     }
+
 }
