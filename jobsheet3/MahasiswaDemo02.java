@@ -3,6 +3,11 @@ public class MahasiswaDemo02 {
     public static void main(String[] args) {
         Scanner sc2 = new Scanner(System.in);
         Mahasiswa02[] arrayOfMahasiswa = new Mahasiswa02[3];
+        Mahasiswa02[] myArrayOfMahasiswa = new Mahasiswa02[3];
+        myArrayOfMahasiswa[0].nim = "244107060033";
+        myArrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
+        myArrayOfMahasiswa[0].kelas = "SIB-1E";
+        myArrayOfMahasiswa[0].ipk = (float) 3.75;
         String dummy;
 
         for(int i = 0; i < 3; i++) {
