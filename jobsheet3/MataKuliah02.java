@@ -36,5 +36,5 @@ public class MataKuliah02 {
         System.out.println("Jumlah Jam      : " + this.jumlahJam);
         System.out.println("---------------------------------------");
 
-    }`
+    }
 }
