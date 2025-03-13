@@ -12,13 +12,20 @@ public class MainPangkat02 {
             int basis = input02.nextInt();
             System.out.print("Masukkan nilai pangkat elemen ke-" + (i+1) + ": ");
             int pangkat = input02.nextInt();
-            png[i] = new Pangkat02(basis, pangkat);
+            png[i] = new Pangkat02();
+            // png[i] = new Pangkat02(basis, pangkat);
         }
+
+        // System.out.println("HASIL PANGKAT BRUTEFORCE: ");
+        // for (Pangkat02 p : png){
+        //     System.out.println(p.nilai + "^" + p.pangkat + ": " + p.pangkatBF(p.nilai, p.pangkat));
+        // }
 
         System.out.println("HASIL PANGKAT BRUTEFORCE: ");
         for (Pangkat02 p : png){
-            System.out.println(p.nilai + "^" + p.pangkat + ": " + p.pangkatBF(p.nilai, p.pangkat));
+            System.out.println(p.nilai + "^" + p.pangkat + ": " + p.pangkatBF());
         }
+
         System.out.println("HASIL PANGKAT DIVIDE AN CONQUER: ");
         for (Pangkat02 p : png){
             System.out.println(p.nilai + "^" + p.pangkat + ": " + p.pangkatDC(p.nilai, p.pangkat));
