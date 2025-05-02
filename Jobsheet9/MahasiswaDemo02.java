@@ -38,6 +38,8 @@ public class MahasiswaDemo02 {
                         int nilai = scan.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
+                        String biner = stack.konversiDesimalBiner(nilai); //Percobaan 2
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     } 
                     break;
                 case 3:
@@ -64,6 +66,6 @@ public class MahasiswaDemo02 {
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih >= 1 && pilih <= 6);
     }
 }
