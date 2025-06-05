@@ -19,6 +19,22 @@ public class BinaryTreeMain02 {
       hasilCari = bst.find(3.22)?"Ditemukan":"Tidak ditemukan";
       System.out.println(hasilCari);
 
+      // (addRekursif)
+      bst.addRekursif(new Mahasiswa02("244160199", "Gilang", "A", 3.88));
+      System.out.println("\nSetelah menambah Gilang dengan addRekursif:");
+      bst.traverseInOrder(bst.root);
+
+      // (cariMinIPK dan cariMaxIPK)
+      System.out.println("\nMahasiswa dengan IPK terkecil:");
+      bst.cariMinIPK().tampilInformasi();
+
+      System.out.println("\nMahasiswa dengan IPK terbesar:");
+      bst.cariMaxIPK().tampilInformasi();
+
+      // (tampilMahasiswaIPKdiAtas)
+      System.out.println("\nMahasiswa dengan IPK di atas 3.5:");
+      bst.tampilMahasiswaIPKdiAtas();
+
       bst.add(new Mahasiswa02("244160131", "Devi", "A", 3.72));
       bst.add(new Mahasiswa02("244160205", "Ehsan", "D", 3.37));
       bst.add(new Mahasiswa02("244160170", "Fizi", "B", 3.46));
