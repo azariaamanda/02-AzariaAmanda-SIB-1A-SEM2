@@ -92,7 +92,7 @@ public class BinaryTree02 {
 
     void delete(double ipk) {
         if (isEmpty()) {
-            System.out.println("Binary tree kodong");
+            System.out.println("Binary tree kosong");
             return;
         }
         //cari node (current) yang dihapus
