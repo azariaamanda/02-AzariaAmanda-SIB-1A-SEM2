@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 public class DemoArrayList02 {
     public static void main(String[] args) {
         ArrayList<Customer02> customers = new ArrayList<>();
@@ -26,20 +27,25 @@ public class DemoArrayList02 {
 
         customers.addAll(newCustomers);
 
+        
+        for (Customer02 cust : customers) {
+            System.out.println(cust.toString());
+        }
+        
+        System.out.println("\nAlternatif Tampilan Lainnya");
+        System.out.println(customers);
+
+        System.out.println("\nSorting ke-1");
         ArrayList<String> daftarSiswa = new ArrayList<>();
         daftarSiswa.add("Zainab");
         daftarSiswa.add("Andi");
         daftarSiswa.add("Rara");
+        Collections.sort(daftarSiswa);
         
         System.out.println(daftarSiswa);
-
+        
+        System.out.println("\nSorting ke-2");
         customers.sort((c1, c2) -> c1.name.compareTo(c2.name));
-
         System.out.println(customers);
-
-        for (Customer02 cust : customers) {
-            // System.out.println(cust.toString());
-            System.out.println(customers);
-        }
     }
 }

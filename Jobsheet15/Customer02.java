@@ -12,6 +12,6 @@ public class Customer02 {
     }
 
     public String toString() {
-        return " ID: " + this.id + " Nama: " + this.name;
+        return "ID: " + this.id + " Nama: " + this.name;
     }
 }

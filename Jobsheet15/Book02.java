@@ -9,8 +9,8 @@ public class Book02 {
         this.isbn = isbn;
         this.title = title;
     }
-    
+
     public String toString() {
-        return " ISBN: " + this.isbn + " Title: " + this.title;
+        return "ISBN: " + this.isbn + " Title: " + this.title;
     }
 }

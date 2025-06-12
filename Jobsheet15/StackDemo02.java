@@ -24,8 +24,12 @@ public class StackDemo02 {
         }
 
         for (Book02 book : books) {
-            // System.out.println(book.toString());
-            System.out.println(books);
+            System.out.println(book.toString());
         }
+        System.out.println("\nAlternatif Tampilan Lainnya");
+        System.out.println(books);
+
+        int index = books.search(book2);
+        System.out.println("\nIndex book2 dari atas: " + index);
     }
 }
