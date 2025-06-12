@@ -29,7 +29,12 @@ public class StackDemo02 {
         System.out.println("\nAlternatif Tampilan Lainnya");
         System.out.println(books);
 
-        int index = books.search(book2);
-        System.out.println("\nIndex book2 dari atas: " + index);
+        System.out.println("\nSearching Stack");
+        int posisi = books.search(book2);
+        if (posisi != -1) {
+            System.out.println("Buku ditemukan pada posisi: " + posisi);
+        } else {
+            System.out.println("Buku tidak ditemukan dalam stack.");
+        }
     }
 }
